@@ -11,6 +11,8 @@
   - Eventos, ¿qué son?
 */
 
+// nuevo comentario
+
 /* ¿Qué elementos del HTML necesito? */
 /* ul, button, select, input */
 /* Me guardo en variables los elementos necesarios */
@@ -47,7 +49,6 @@ function crearNuevaTarea(nombre, prioridad) {
 */
 // En este usamos el evento 'click' para cuando el usuario clickea el botón
 botonAgregar.addEventListener("click", function () {
-  // Primero checheo que el usuario haya escrito un titulo para la tarea y seleccionado una prioridad.
   // Para eso nos fijamos que tanto el input como el select tengan un valor distinto a ""
   if (inputTarea.value !== "" && selectorPrioridad.value !== "") {
     // Si es asi, creamos la tarea
@@ -57,6 +58,8 @@ botonAgregar.addEventListener("click", function () {
     alert("Por favor ingrese los datos");
   }
 });
+
+//otra cosa
 
 listaDeTareasUl.addEventListener("click", function (evento){
   evento.target.remove();
