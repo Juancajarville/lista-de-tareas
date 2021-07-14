@@ -49,17 +49,16 @@ function crearNuevaTarea(nombre, prioridad) {
 */
 // En este usamos el evento 'click' para cuando el usuario clickea el botón
 botonAgregar.addEventListener("click", function () {
+  // Primero checheo que el usuario haya escrito un titulo para la tarea y seleccionado una prioridad.
   // Para eso nos fijamos que tanto el input como el select tengan un valor distinto a ""
   if (inputTarea.value !== "" && selectorPrioridad.value !== "") {
     // Si es asi, creamos la tarea
-    crearNuevaTarea(inputTarea.value, selectorPrioridad.value);
+    crearNuevaTarea(inputTarea.value, 'prioridad-alta');
   } else {
     // Si no es asi, mostramos una alerta al usuario
     alert("Por favor ingrese los datos");
   }
 });
-
-//otra cosa
 
 listaDeTareasUl.addEventListener("click", function (evento){
   evento.target.remove();
