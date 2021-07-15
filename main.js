@@ -18,7 +18,7 @@ function crearNuevaTarea(nombre, prioridad) {
 
 botonAgregar.addEventListener("click", function () {
   if (inputTarea.value !== "" && selectorPrioridad.value !== "") {
-    crearNuevaTarea(inputTarea.value, 'prioridad-alta');
+    crearNuevaTarea(inputTarea.value, selectorPrioridad.value);
   } else {
     alert("Por favor ingrese los datos");
   }
